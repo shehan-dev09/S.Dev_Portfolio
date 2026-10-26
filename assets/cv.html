@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Shehan Nadeesha — CV</title>
+<style>
+  @font-face{font-family:'Outfit';src:url('fonts/outfit-var.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+  @font-face{font-family:'Inter';src:url('fonts/inter-var.woff2') format('woff2-variations');font-weight:100 900;font-display:block}
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--ink:#16161a;--ink3:#6a6a75;--y:#e11d2e;--line:rgba(16,18,21,.14)}
+  @page{size:A4;margin:0}
+  body{font-family:'Inter',sans-serif;color:var(--ink);font-size:10.2pt;line-height:1.5;background:#fff}
+  .page{width:210mm;min-height:297mm;padding:14mm 15mm 12mm;position:relative}
+  header.top{display:flex;justify-content:space-between;align-items:flex-start;gap:10mm;padding-bottom:6mm;border-bottom:2.4px solid var(--ink)}
+  h1{font-family:'Outfit',sans-serif;font-size:26pt;line-height:1;letter-spacing:-.03em;text-transform:uppercase}
+  h1 span{color:#e11d2e}
+  .role{font-family:'Outfit',sans-serif;font-size:11pt;font-weight:600;margin-top:3mm;letter-spacing:.02em}
+  .contact{font-size:8.6pt;color:var(--ink3);text-align:right;line-height:1.75;white-space:nowrap}
+  .contact b{color:var(--ink);font-weight:600}
+  .badge{display:inline-block;background:var(--y);color:var(--ink);font-family:'Outfit',sans-serif;font-size:7.4pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:1.2mm 3mm;border-radius:99px;margin-bottom:3mm}
+  section{margin-top:6mm;break-inside:avoid}
+  h2{font-family:'Outfit',sans-serif;font-size:8.6pt;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);margin-bottom:3mm;display:flex;align-items:center;gap:2.5mm}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  p{color:var(--ink3)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:5mm 8mm}
+  .item{margin-bottom:3.6mm}
+  .item h3{font-family:'Outfit',sans-serif;font-size:10.4pt;font-weight:700;letter-spacing:-.01em}
+  .item .meta{font-size:8.4pt;color:var(--ink3);margin:.6mm 0 1.2mm;font-weight:500}
+  .item ul{margin-top:1.4mm;padding-left:4mm;list-style:disc}
+  .item li{font-size:9.2pt;color:var(--ink3);margin-bottom:.9mm}
+  .chips{display:flex;flex-wrap:wrap;gap:1.8mm;margin-top:1mm}
+  .chip{font-family:'Outfit',sans-serif;font-size:8pt;font-weight:600;border:1px solid var(--line);border-radius:99px;padding:.9mm 2.6mm;color:var(--ink)}
+  .chip.y{background:var(--y);border-color:var(--y);color:#fff}
+  .skillrow{display:grid;grid-template-columns:34mm 1fr;gap:3mm;font-size:9.2pt;margin-bottom:2mm}
+  .skillrow b{font-family:'Outfit',sans-serif;font-weight:700;font-size:9pt}
+  .skillrow span{color:var(--ink3)}
+  footer{margin-top:7mm;padding-top:3.5mm;border-top:1px solid var(--line);font-size:7.8pt;color:#8b919a;display:flex;justify-content:space-between}
+  .bar{position:absolute;left:0;top:0;width:100%;height:5mm;background:#e11d2e}
+</style></head>
+<body><div class="page">
+  <div class="bar"></div>
+  <header class="top">
+    <div>
+      <div class="badge">Available for internships</div>
+      <div style="display:flex;align-items:center;gap:4mm">
+        <span style="display:grid;place-items:center;width:11mm;height:11mm;border-radius:3.4mm;background:#e11d2e;color:#fff;font-family:'Outfit',sans-serif;font-size:16pt;font-weight:700;line-height:1">S</span>
+        <h1 style="font-size:24pt">Shehan <span>Nadeesha</span></h1>
+      </div>
+      <div class="role">AI &amp; Machine Learning · Full-Stack Developer</div>
+    </div>
+    <div class="contact">
+      <div><b>hello@shehannadeesha.dev</b></div>
+      <div>github.com/shehan-dev09</div>
+      <div>linkedin.com/in/shehan-nadeesha</div>
+      <div>Sri Lanka · open to remote</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>IT undergraduate at SLIIT specialising in Artificial Intelligence, building intelligent full-stack
+    products end to end — from machine-learning prediction models to production-ready interfaces.
+    Practical, product-minded and comfortable owning a feature from database schema to deploy.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <h3>BSc (Hons) in Information Technology — Artificial Intelligence</h3>
+      <div class="meta">Sri Lanka Institute of Information Technology (SLIIT) · 2024 – Present</div>
+      <p style="font-size:9.2pt">Coursework: machine learning, neural networks, data structures &amp; algorithms, database systems, software engineering, full-stack development.</p>
+      <div class="chips"><span class="chip">Machine Learning</span><span class="chip">Data Structures</span><span class="chip">AI Algorithms</span><span class="chip">Database Systems</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <h3>Kasala.Lk — ML-powered waste collection platform</h3>
+      <div class="meta">Python · FastAPI · Next.js · Supabase · Scikit-learn</div>
+      <ul>
+        <li>Predicts garbage-collection demand per city so councils can allocate trucks and routes by forecast instead of fixed schedules.</li>
+        <li>Citizen-facing portal for reporting missed collections, feeding live data back into the model.</li>
+        <li>Built the ML pipeline, REST API and responsive dashboard end to end.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>AI Study Companion</h3>
+      <div class="meta">Python · LangChain · React · (in progress)</div>
+      <ul>
+        <li>Turns lecture notes and PDFs into summaries, flashcards and quizzes using a retrieval-augmented LLM pipeline.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Smart Attendance — face-recognition system</h3>
+      <div class="meta">OpenCV · Flask · MySQL</div>
+      <ul>
+        <li>Real-time attendance capture with a lecturer dashboard, removing manual roll call.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skillrow"><b>AI / ML</b><span>Python, Scikit-learn, Pandas, NumPy, TensorFlow basics, prompt &amp; LLM integration</span></div>
+    <div class="skillrow"><b>Frontend</b><span>HTML5, CSS3, JavaScript (ES6+), React, Next.js, responsive &amp; accessible UI</span></div>
+    <div class="skillrow"><b>Backend</b><span>Node.js, Express, FastAPI, Flask, REST APIs, authentication</span></div>
+    <div class="skillrow"><b>Data</b><span>MySQL, PostgreSQL, Supabase, Firebase</span></div>
+    <div class="skillrow"><b>Tools</b><span>Git &amp; GitHub, VS Code, Postman, Vercel, Figma</span></div>
+    <div class="skillrow"><b>Creative</b><span>Premiere Pro, After Effects, Photoshop, technical content creation</span></div>
+  </section>
+
+  <section>
+    <h2>Highlights</h2>
+    <div class="chips">
+      <span class="chip y">SLIIT Buildathon 2026 — participant</span>
+      <span class="chip">12+ personal &amp; academic projects shipped</span>
+      <span class="chip">Tech content creator — 3 platforms</span>
+    </div>
+  </section>
+
+  <footer>
+    <span>Shehan Nadeesha — Curriculum Vitae</span>
+    <span>shehan-dev09.github.io/My-Portfolio</span>
+  </footer>
+</div></body></html>
