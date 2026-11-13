@@ -1385,7 +1385,7 @@ html.js .reveal.is-in{ opacity:1; transform:none; }
 }
 .edu__logo{
   width:clamp(56px,8vw,76px); height:clamp(56px,8vw,76px);
-  background:var(--white);
+  
   display:grid; place-items:center;
   padding:8px;
   flex:none;
